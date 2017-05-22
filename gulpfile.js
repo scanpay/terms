@@ -86,10 +86,21 @@ function nunj(o={}) {
     });
 }
 
+// Tmp. hacky solution :(
+const nameMap = {
+    brugeraftale: 'user_da',
+    erhvervsaftale: 'shop_da',
+    mobilepay: 'mobilepay_da'
+}
+
 function html() {
     return gulp.src(env.src ? env.src : 'src/*.md')
     .pipe(nunj({ locals: env }))
     .pipe(through.obj((file, enc, cb) => {
+        const name = file.path.substring(file.path.lastIndexOf('/') + 1, file.path.lastIndexOf('.'));
+        if (nameMap[name]) {
+            file.path = file.path.replace(name, nameMap[name]);
+        }
         file.path = file.path.replace('.md', '.html');
         cb(null, file);
     }))
