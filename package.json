@@ -3,10 +3,9 @@
     "dependencies": {
         "gulp": "github:gulpjs/gulp#4.0",
         "gulp-connect": "*",
-        "gulp-less": "*",
+        "less": "*",
         "nunjucks": "*",
         "through2": "*",
-        "minimist": "*",
-        "gulp-rename": "*"
+        "minimist": "*"
     }
 }

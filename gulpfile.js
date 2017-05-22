@@ -5,9 +5,8 @@
 
 const gulp = require('gulp');
 const nunjucks = require('nunjucks');
-const less = require('gulp-less');
+const lessjs = require('less');
 const through = require('through2');
-const rename = require("gulp-rename");
 const env = require('minimist')(process.argv.slice(2));
 const connect = require('gulp-connect');
 
@@ -16,6 +15,18 @@ const date = new Date((env.date || 1) * 1000);
 env.month = date.getMonth();
 env.day = date.getDate();
 env.year = date.getFullYear();
+
+
+function less() {
+    return through.obj((file, enc, cb) => {
+        lessjs.render(file.contents.toString(), null, (err, res) => {
+            if (err) { throw err; }
+            file.contents = new Buffer(res.css);
+            file.path = file.path.substring(0, file.path.lastIndexOf('.')) + '.css';
+            cb(null, file);
+        });
+    });
+}
 
 function proxy(req, res, next) {
     const https = require('https');
@@ -78,14 +89,20 @@ function nunj(o={}) {
 function html() {
     return gulp.src(env.src ? env.src : 'src/*.md')
     .pipe(nunj({ locals: env }))
-    .pipe(rename(path => { path.extname = ".html"; }))
+    .pipe(through.obj((file, enc, cb) => {
+        file.path = file.path.replace('.md', '.html');
+        cb(null, file);
+    }))
     .pipe(gulp.dest('www/static/'));
 }
 
 function withCSS() {
     return gulp.src(env.src ? env.src : 'src/*.md')
     .pipe(nunj({ locals: Object.assign(env, { withCSS: true }) }))
-    .pipe(rename(path => { path.extname = ".html"; }))
+    .pipe(through.obj((file, enc, cb) => {
+        file.path = file.path.replace('.md', '.html');
+        cb(null, file);
+    }))
     .pipe(gulp.dest('www'))
     .pipe(connect.reload());
 }
