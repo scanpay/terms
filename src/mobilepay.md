@@ -5,7 +5,7 @@
 <header>
   <h1 class="terms--h1">{{ title }}</h1>
 </header>
-<article data-date="{{ date }}" data-hash="{{ hash }}">
+<article data-date="{{ date }}" data-hash="{{ hash }}" class="terms--">
   <p>
     Denne aftale indgås mellem Scanpay ApS (CVR. <a target="_blank" href="https://datacvr.virk.dk/data/visenhed?enhedstype=virksomhed&id=35413308&soeg=35413308">DK35413308</a>) og den juridiske person ("kunden"), der accepterer aftalen. Begge parter kan opsige aftalen uden varsel.
   </p>
@@ -15,7 +15,7 @@
     Kunden skal betale 1 DKK pr. transaktion, som kunden modtager via MobilePay. Derudover skal kunden dagligt betale 1,6 DKK pr. påbegyndt dag.
   </p>
 
-  <h3>Tredjemand</h3>
+  <h3 class="terms--h3">Tredjemand</h3>
   <p>
     For MobilePay betalinger giver kunden tilladelse til at Scanpay deler følgende oplysninger med Danske Bank A/S og DIBS A/S:
     <ul>
@@ -25,7 +25,7 @@
     </ul>
   </p>
 
-  <h3>Opsigelse</h3>
+  <h3 class="terms--h3">Opsigelse</h3>
   <p>Aftalen opsiges ved at deaktivere MobilePay i vores dashboard.</p>
 </article>
 {% endblock %}
