@@ -5,7 +5,7 @@
 <header>
   <h1 class="terms--h1">{{ title }}</h1>
 </header>
-<article data-date="{{ date }}" data-hash="{{ hash }}">
+<article data-date="{{ date }}" data-hash="{{ hash }}" class="terms--">
   <p>
     Disse betingelser vedrører indbetalinger med kredit- og debetkort, herunder Dankort, Visa og MasterCard. Kundens inbetaling konverteres til elektroniske penge ("e-penge"), som er underlagt lov om betalingstjenester og elektroniske penge.
   </p>

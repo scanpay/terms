@@ -5,7 +5,7 @@
 <header>
   <h1 class="terms--h1">{{ title }}</h1>
 </header>
-<article data-date="{{ date }}" data-hash="{{ hash }}">
+<article data-date="{{ date }}" data-hash="{{ hash }}" class="terms--">
   <p>
     Denne brugeraftale indgås mellem dig, som privatperson, og Scanpay ApS (CVR. <a target="_blank" href="https://datacvr.virk.dk/data/visenhed?enhedstype=virksomhed&id=35413308&soeg=35413308">DK35413308</a>). Begge parter kan opsige aftalen uden varsel, hvorved alle dine personlige oplysninger vil blive slettet.
   </p>
