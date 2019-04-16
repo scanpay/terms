@@ -13,7 +13,7 @@
 
 <h3 class="terms--h3">Tredjemand</h3>
 <p>
-  For MobilePay betalinger giver kunden tilladelse til at Scanpay deler følgende oplysninger med Danske Bank A/S og DIBS A/S:
+  For MobilePay betalinger giver kunden tilladelse til at Scanpay deler følgende oplysninger med MobilePay Denmark A/S og DIBS A/S:
   <ul>
       <li>Firmanavn og logo</li>
       <li>Beløb og valuta</li>
