@@ -1,5 +1,5 @@
 # Brugeraftale
-Denne brugeraftale indgås mellem dig, som privatperson, og Scanpay ApS (CVR. [DK35413308](https://datacvr.virk.dk/data/visenhed?enhedstype=virksomhed&id=35413308&soeg=35413308)). Begge parter kan opsige aftalen uden varsel, hvorved alle dine oplysninger bliver slettet.
+Denne brugeraftale indgås mellem dig, som privatperson, og Scanpay ApS (CVR. [DK35413308](https://datacvr.virk.dk/data/visenhed?enhedstype=virksomhed&id=35413308&soeg=35413308)). Begge parter kan uden varsel opsige aftalen, hvorved alle dine oplysninger bliver slettet. Ved indgåelse af aftalen opsiges tidligere indgåede brugeraftaler.
 
 ### Brugerkonto
 En brugerkonto er en personlig konto, som du kan bruge til at oprette og administrere virksomhedskonti med. Din brugerkonto er personlig, dvs. at den er bundet til dig, som privatperson, og kun må benyttes af dig. Du har det fulde ansvar for, hvad din konto bliver brugt til, og du har pligt til at sikre, at andre ikke kan tilgå din konto. Hvis du får mistanke om, at andre har haft adgang til din konto, skal du straks ændre din adgangskode og kontakte os. Du har pligt til at sikre, at de oplysninger, som er tilknyttet din konto, er korrekte og opdaterede.
